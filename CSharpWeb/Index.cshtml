@@ -1,0 +1,42 @@
+﻿@Model IEnumerable<CSharpWeb.Models.Flight>
+     <!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Kelompok 3 c#</title>
+    </head>
+    <body>
+        <div>
+            <h2><center> Kelompok 3 C# </center></h2>
+            <table class=" = " table">
+                <tr>
+                    <th>
+                        @Model.Flightcode
+                    </th>
+                    <th>
+                        @Model.Depature
+                    </th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Model.Flightcode
+                        </td>
+                        <td>
+                            @Model.Depature
+                        </td>
+
+                    </tr>
+                }
+            </table>
+        </div>
+    </body>
+    </html>
+</CSharpWeb.Models.Flight>
+
+
+
+    
+   
+
